@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f8ec2975f18d5e479159feb34b4dc86, type: 3}
   m_Name: MixedRealityFeaturePlugin Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Mixed Reality Features
   version: 1.0.1
   featureIdInternal: com.microsoft.openxr.feature.hololens
@@ -334,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3482401f887b8864183e401715462f46, type: 3}
   m_Name: HPMixedRealityControllerProfile Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: HP Reverb G2 Controller Profile
   version: 1.0.1
   featureIdInternal: com.microsoft.openxr.feature.interaction.hpmixedrealitycontroller
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feeef8d85de8db242bdda70cc7ff5acd, type: 3}
   m_Name: OculusTouchControllerProfile Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Oculus Touch Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.oculustouch
@@ -532,13 +532,10 @@ MonoBehaviour:
   - {fileID: -7654110927950330978}
   - {fileID: -2934854646137531982}
   - {fileID: 2810549211577941139}
-  - {fileID: -243373871353431060}
   - {fileID: -4187987840633011800}
   - {fileID: -5005635432611770178}
   - {fileID: -2334645829923941875}
   - {fileID: -6293065610811951275}
-  - {fileID: 8867140960025884102}
-  - {fileID: 1511295118708379725}
   - {fileID: -55340147652812196}
   m_renderMode: 1
   m_depthSubmissionMode: 0
@@ -608,7 +605,6 @@ MonoBehaviour:
   - {fileID: -2102242615830464930}
   - {fileID: -7032905055713256058}
   - {fileID: -1163431834042308952}
-  - {fileID: 3720929048496330807}
   - {fileID: 228319858497469832}
   - {fileID: 9044362165945714909}
   - {fileID: -1149288710293793214}
