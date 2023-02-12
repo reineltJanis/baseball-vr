@@ -7,11 +7,17 @@ public class Ball : MonoBehaviour
 
     private bool wasHit = false;
     private Rigidbody rb;
+    private TrailRenderer tr;
 
     private float timeout = 7f;
 
+    private string hitFieldTag = "HitField";
+
     void Start() {
+
         rb = gameObject.GetComponent<Rigidbody>();
+        tr = gameObject.GetComponent<TrailRenderer>();
+        tr.enabled = false;
     }
 
     void Update(){
@@ -32,13 +38,13 @@ public class Ball : MonoBehaviour
         if (wasHit)
             return;
 
-        Debug.Log(collision);
+
         wasHit = rb.useGravity = true;
 
-        foreach (ContactPoint contact in collision.contacts)
-        {
-            Debug.DrawRay(contact.point, contact.normal, Color.white);
+        if (collision.gameObject.tag == "Bat") {
+            tr.enabled = true;
         }
+
         // if (collision.relativeVelocity.magnitude > 2)
         // audioSource.Play();
     }
