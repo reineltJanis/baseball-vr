@@ -44,7 +44,6 @@ public class Ball : MonoBehaviour
         if (collision.gameObject.tag == "Bat") {
             tr.enabled = true;
         }
-
         // if (collision.relativeVelocity.magnitude > 2)
         // audioSource.Play();
     }
