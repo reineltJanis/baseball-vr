@@ -20,7 +20,8 @@ public class HitField : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.GetComponent<Ball>() != null) {
+        if (collision.gameObject.GetComponent<Ball>() != null && !collision.gameObject.GetComponent<Ball>().wasLanded) {
+            collision.gameObject.GetComponent<Ball>().wasLanded = false;
             showText.SetText(text);
             if (audioSource != null) {
                 audioSource?.Play();

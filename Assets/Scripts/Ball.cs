@@ -6,10 +6,11 @@ public class Ball : MonoBehaviour
 {
 
     private bool wasHit = false;
+    public bool wasLanded = false;
     private Rigidbody rb;
     private TrailRenderer tr;
-
     private float timeout = 7f;
+
 
     void Start() {
         rb = gameObject.GetComponent<Rigidbody>();
