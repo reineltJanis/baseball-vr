@@ -12,7 +12,7 @@
 
 # Bei Verwendung der Pico4 beachten:
 
-1. Starten des Streaming Assistenten am Computer und auf der PICO4
-2. Verbinden der VR-Brille (Netzwerk/Kabel)
-3. Starten der SteamVR Anwendung
+1. Starten der SteamVR Anwendung
+2. Starten des Streaming Assistenten am Computer und auf der PICO4
+3. Verbinden der VR-Brille (Netzwerk/Kabel)
 4. Starten des Projekts über Unity Hub
