@@ -1,41 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class HitField : MonoBehaviour
 {
+    private ShowText showText;
 
-    private float timeout = 2f;
-    private TMP_Text homeRunText;
+    [SerializeField]
+    private string text;
 
+    [SerializeField]
     private AudioSource audioSource;
-    private Animator animator;
 
     void Start() {
-        homeRunText = GameObject.Find("HomeRunText").GetComponent<TMP_Text>();
-        animator = homeRunText.GetComponent<Animator>();
-        homeRunText.enabled = false;
-        animator.enabled = false;
-
-        audioSource = GetComponent<AudioSource>();
-    }
-
-    void Update(){
-        timeout -= Time.deltaTime;
-
-        if (timeout <= 0){
-            homeRunText.enabled = false;
-            animator.enabled = false;
-        }
+        showText = GameObject.Find("HomeRunText").GetComponent<ShowText>();
     }
 
     void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.tag == "Ball") {
-            audioSource.Play();
-            homeRunText.enabled = true;
-            animator.enabled = true;
-            timeout = 2f;
+            showText.SetText(text);
+            if (audioSource != null) {
+                audioSource?.Play();
+            }
         }
     }
 }

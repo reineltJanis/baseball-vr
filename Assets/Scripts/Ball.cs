@@ -11,10 +11,7 @@ public class Ball : MonoBehaviour
 
     private float timeout = 7f;
 
-    private string hitFieldTag = "HitField";
-
     void Start() {
-
         rb = gameObject.GetComponent<Rigidbody>();
         tr = gameObject.GetComponent<TrailRenderer>();
         tr.enabled = false;
@@ -36,15 +33,12 @@ public class Ball : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         if (wasHit)
-            return;
-
-
+            return; 
+    
         wasHit = rb.useGravity = true;
 
         if (collision.gameObject.tag == "Bat") {
             tr.enabled = true;
         }
-        // if (collision.relativeVelocity.magnitude > 2)
-        // audioSource.Play();
     }
 }
