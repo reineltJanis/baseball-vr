@@ -13,7 +13,7 @@ public class HitField : MonoBehaviour
     private AudioSource audioSource;
 
     void Start() {
-        showText = GameObject.Find("HomeRunText").GetComponent<ShowText>();
+        showText = GameObject.Find("HitText").GetComponent<ShowText>();
     }
 
     void OnCollisionEnter(Collision collision) {

@@ -7,25 +7,25 @@ public class ShowText : MonoBehaviour
 {
     [SerializeField]
     private float timeout = 2f;
-    private TMP_Text homeRunText;
+    private TMP_Text hitText;
 
     void Start() {
-        homeRunText = GameObject.Find("HomeRunText").GetComponent<TMP_Text>();
-        homeRunText.enabled = false;
+        hitText = GameObject.Find("HitText").GetComponent<TMP_Text>();
+        hitText.enabled = false;
     }
 
     void Update(){
         if (timeout > 0)
         timeout -= Time.deltaTime;
 
-        if (timeout <= 0 && homeRunText.enabled){
-            homeRunText.enabled = false;
+        if (timeout <= 0 && hitText.enabled){
+            hitText.enabled = false;
         }
     }
 
     public void SetText(string text) {
             timeout = 2f;
-            homeRunText.enabled = true;
-            homeRunText.SetText(text);
+            hitText.enabled = true;
+            hitText.SetText(text);
     }
 }
