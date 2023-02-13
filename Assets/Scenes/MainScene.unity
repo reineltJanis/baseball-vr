@@ -735,7 +735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64cfa723f6b6d584f9697c690f447276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeout: 1.5
+  timeout: 1.2
 --- !u!1 &599916901
 GameObject:
   m_ObjectHideFlags: 0
@@ -2097,6 +2097,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4124266553357622710, guid: b7412438a518bd8449a0facd36881b84,
         type: 3}
+      propertyPath: hitText
+      value: 
+      objectReference: {fileID: 560089728}
+    - target: {fileID: 4124266553357622710, guid: b7412438a518bd8449a0facd36881b84,
+        type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1668010207}
@@ -3422,6 +3427,11 @@ PrefabInstance:
       propertyPath: text
       value: Okay
       objectReference: {fileID: 0}
+    - target: {fileID: 4124266553357622710, guid: b7412438a518bd8449a0facd36881b84,
+        type: 3}
+      propertyPath: hitText
+      value: 
+      objectReference: {fileID: 560089728}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7412438a518bd8449a0facd36881b84, type: 3}
 --- !u!4 &1851565999 stripped
@@ -3589,8 +3599,13 @@ PrefabInstance:
     - target: {fileID: 4124266553357622710, guid: b7412438a518bd8449a0facd36881b84,
         type: 3}
       propertyPath: text
-      value: Gut
+      value: Good
       objectReference: {fileID: 0}
+    - target: {fileID: 4124266553357622710, guid: b7412438a518bd8449a0facd36881b84,
+        type: 3}
+      propertyPath: hitText
+      value: 
+      objectReference: {fileID: 560089728}
     - target: {fileID: 4124266553357622710, guid: b7412438a518bd8449a0facd36881b84,
         type: 3}
       propertyPath: audioSource

@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class HitField : MonoBehaviour
 {
-    private ShowText showText;
-
     [SerializeField]
     private string text;
 
     [SerializeField]
     private AudioSource audioSource;
 
+    [SerializeField]
+    private GameObject hitText;
+
+    private ShowText showText;
+
     void Start() {
-        showText = GameObject.Find("HitText").GetComponent<ShowText>();
+        showText = hitText.GetComponent<ShowText>();
     }
 
     void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.tag == "Ball") {
+        if (collision.gameObject.GetComponent<Ball>() != null) {
             showText.SetText(text);
             if (audioSource != null) {
                 audioSource?.Play();

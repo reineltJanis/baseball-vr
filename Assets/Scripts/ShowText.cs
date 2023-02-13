@@ -10,7 +10,7 @@ public class ShowText : MonoBehaviour
     private TMP_Text hitText;
 
     void Start() {
-        hitText = GameObject.Find("HitText").GetComponent<TMP_Text>();
+        hitText = gameObject.GetComponent<TMP_Text>();
         hitText.enabled = false;
     }
 

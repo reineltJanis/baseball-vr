@@ -59,3 +59,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: Not bad
+  audioSource: {fileID: 0}
+  hitText: {fileID: 4124266553357622708}

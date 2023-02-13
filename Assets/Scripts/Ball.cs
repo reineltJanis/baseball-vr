@@ -20,7 +20,6 @@ public class Ball : MonoBehaviour
     void Update(){
         if (!wasHit){
             rb.useGravity = false;
-            // rb.velocity = Vector3.Scale(rb.velocity, new Vector3(1,0,1));
         }
 
         timeout -= Time.deltaTime;
@@ -37,7 +36,7 @@ public class Ball : MonoBehaviour
     
         wasHit = rb.useGravity = true;
 
-        if (collision.gameObject.tag == "Bat") {
+        if (collision.gameObject.GetComponent<Bat>() != null) {
             tr.enabled = true;
         }
     }

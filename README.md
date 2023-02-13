@@ -6,9 +6,9 @@
 - Schlagen über physische Schlagbewegung
 
 # Bewertungskategorien (Textanzeige)
-- Bad
+- Okay
 - Good
-- Awesome (+Sound)
+- Home Run (+Sound)
 
 # Bei Verwendung der Pico4 beachten:
 
